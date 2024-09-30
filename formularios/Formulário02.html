@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+
+	<head>
+
+		<title>Formulário HTML 02</title>
+
+	</head>	
+
+	<body>
+
+		<h2 style="color: blue; text-align: center; font-size: 5rem"> Formulário 02 </h2>
+
+		<form>
+			<fieldset>
+
+				<legend>Dados Gerais</legend>
+
+				<label for="nome">Nome:</label>
+				<input type="text" minlength="3" name="nome" required>
+
+				<label for="data_nascimento">Data de Nascimento:</label>
+				<input type="date" id="data_nascimento" required>
+
+
+			</fieldset>
+
+			<fieldset>
+
+				<legend>Contatos:</legend>
+
+				<label for="telefone">Telefone:</label>
+				<input type="text" id="telefone" required>
+
+				<label for="email">Email:</label>
+				<input type="text" id="email">
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Fale Conosco:</legend>
+
+				<label for="mensagem">Mensagem:</label>
+				<textarea name="mensagem" cols="30" rows="4"></textarea>
+
+			</fieldset>
+
+			<fieldset>
+
+				<input type="submit" value="Enviar">
+
+			</fieldset>
+
+		</form>
+
+	</body>

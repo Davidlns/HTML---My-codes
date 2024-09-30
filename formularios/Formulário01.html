@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>MEU PRIMEIRO FORMULÁRIO</title>
+
+	</head>
+
+	<body>
+
+		<h2> PRIMEIRO FORMULÁRIO DAVID </h2>
+
+		<form action="/pagina-processados-do-form" method="post">
+
+			<fieldset> <!-- Conjunto de campos -->
+
+				<legend>Dados Gerais</legend> <!-- Cria um texto de destaque no contorno do conjunto de campos -->
+
+				<label for="nome"> Nome:</label>
+				<input type="text" minlength="3" id="nome" />
+
+				<label for="data_nascimento">Data de Nascimento:</label>
+				<input type="text" id="data_nascimento" />
+
+				<label for="cpf">CPF:</label>
+				<input type="cpf" minlength="11" id="cpf" />
+
+			</fieldset>
+
+			<fieldset>
+				
+				<legend>Endereço</legend>
+
+				<label for="tipo_endereco">Tipo:</label>
+				<select id="tipo_endereco"> <!-- Cria uma caixa de seleção -->
+					<option value="">Rua</option> <!-- Cria opções de escolha dentro da caixa de seleção -->
+					<option value="">Estrada</option>
+					<option value="">Rodovia</option>
+					<option value="">Outros</option>
+				</select>
+
+				<label for="logradouro_endereco">Logradouro:</label>
+				<input type="text" id="logradouro_endereco" />
+
+				<label for="numero_endereco">Número:</label>
+				<input type="text" id="numero_endereco" />
+
+				<label for="complemento_endereco">Complemento:</label>
+				<input type="text" id="complemento_endereco" />
+
+			</fieldset>
+
+			<fieldset>
+
+				<legend>Fale Conosco</legend>
+
+				<label for="msg">Mensagem:</label>
+				<textarea type="text" id="msg"></textarea> <!-- Cria uma caixa grande de texto vazia para o usuário digitar -->
+
+			</fieldset>
+
+			<fieldset>
+				
+				<button type="submit">Enviar sua mensagem</button> <!-- Cria um botão com a função de enviar dados com type ="submit"-->
+				<button type="reset">Limpar o Formulário</button> <!-- Cria um botão com a função de resetar o formulário -->
+
+			</fieldset>
+
+		</form>
+
+	</body>
+
+</html>
